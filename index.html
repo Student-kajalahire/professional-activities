@@ -5,74 +5,163 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kajal Ahire - Professional Activities</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
     header {
-      background: #0d6efd;
+      background: url('https://source.unsplash.com/1600x600/?technology,computer') center/cover no-repeat;
       color: white;
-      padding: 40px 20px;
       text-align: center;
+      padding: 120px 20px;
+    }
+    header h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 5px #000;
+    }
+    header p {
+      font-size: 1.3rem;
+      text-shadow: 1px 1px 4px #000;
     }
     section {
-      padding: 50px 20px;
+      padding: 60px 20px;
+    }
+    .card {
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
     footer {
-      background: #f8f9fa;
+      background: #0d6efd;
+      color: white;
       text-align: center;
       padding: 20px;
-      margin-top: 30px;
+    }
+    .gallery img {
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
     }
   </style>
 </head>
 <body>
 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">Kajal Ahire</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#achievements">Achievements</a></li>
+          <li class="nav-item"><a class="nav-link" href="#gallery">Certificates</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
   <header>
     <h1>🌟 Kajal Ahire</h1>
-    <p>Professional Activities & Projects</p>
+    <p>Computer Technology | Web Development | Professional Activities</p>
   </header>
 
-  <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>Hello! I am Kajal Ahire, a Computer Technology diploma student at Government Polytechnic Nashik. 
-      This is my professional activities website showcasing my projects, achievements, and experiences.</p>
-    </div>
+  <!-- About Section -->
+  <section id="about" class="container text-center">
+    <h2 class="mb-4">About Me</h2>
+    <p class="lead">Hello! I am <b>Kajal Ahire</b>, a Computer Technology diploma graduate from 
+      <b>Government Polytechnic Nashik</b>.  
+      I am passionate about web development, cloud, and modern technologies.  
+      This is my professional portfolio showcasing projects, achievements, and certificates. 🚀</p>
   </section>
 
+  <!-- Projects Section -->
   <section id="projects" class="bg-light">
     <div class="container">
-      <h2>Projects</h2>
-      <ul>
-        <li>💻 Face recognization attendace management system (Python)</li>
-        <li>📊 Inventory Management System (Django + MySQL)</li>
-      </ul>
+      <h2 class="text-center mb-5">Projects</h2>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="bi bi-display fs-1 text-primary"></i>
+              <h5 class="card-title mt-3">Face Recognization Attendance Mnagement System</h5>
+              <p class="card-text">Python project for Smart Attendance System</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="card text-center">
+            <div class="card-body">
+              <i class="bi bi-database fs-1 text-danger"></i>
+              <h5 class="card-title mt-3">Inventory Management System</h5>
+              <p class="card-text">Inventory system using Django & MySQL to manage college resources.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- Achievements Section -->
   <section id="achievements">
     <div class="container">
-      <h2>Achievements</h2>
-      <ul>
-        <li>✔️ Completed Diploma in Computer Technology with distinction</li>
-        <li>✔️ Internship at Government Polytechnic Nashik</li>
-        <li>✔️ Hands-on experience in Django & Web Development</li>
+      <h2 class="text-center mb-5">Achievements</h2>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item"><i class="bi bi-award-fill text-warning"></i> Completed Diploma with distinction</li>
+        <li class="list-group-item"><i class="bi bi-building-check text-success"></i> Internship at Government Polytechnic Nashik</li>
+        <li class="list-group-item"><i class="bi bi-code-slash text-primary"></i> Learnt Django , Web Development And AWS Fundamentals</li>
       </ul>
     </div>
   </section>
 
-  <section id="contact" class="bg-light">
+  <!-- Certificates / Gallery Section -->
+  <section id="gallery" class="bg-light">
     <div class="container">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:kajal.ahire@example.com">kajal.ahire@example.com</a></p>
-      <p>GitHub: <a href="https://github.com/student-kajalahire">student-kajalahire</a></p>
+      <h2 class="text-center mb-5">Certificates & Gallery</h2>
+      <div class="row g-4 gallery">
+        <div class="col-md-4">
+          <img src="images/certificate1.jpg" class="img-fluid" alt="Certificate 1">
+        </div>
+        <div class="col-md-4">
+          <img src="images/certificate2.jpg" class="img-fluid" alt="Certificate 2">
+        </div>
+        <div class="col-md-4">
+          <img src="images/certificate3.jpg" class="img-fluid" alt="Certificate 3">
+        </div>
+      </div>
     </div>
   </section>
 
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container text-center">
+      <h2 class="mb-4">Contact Me</h2>
+      <p>Email: <a href="mailto:kajal.ahire@example.com">kajalahire121@gmail.com</a></p>
+      <p>GitHub: <a href="https://github.com/student-kajalahire">student-kajalahire</a></p>
+      <p>
+        <a href="www.linkedin.com/in/kajal-ahire-a2a940300" class="btn btn-primary btn-sm"><i class="bi bi-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/student-kajalahire" class="btn btn-dark btn-sm"><i class="bi bi-github"></i> GitHub</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>✨ Built with ❤️ by Kajal Ahire</p>
+    <p>✨ Built with ❤️ by Kajal Ahire | 2025</p>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
