@@ -76,39 +76,62 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
+<!-- Bootstrap & Icons CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
 <!-- Hero Section -->
 <header class="d-flex align-items-center justify-content-center text-center" 
-        style="height:100vh; background: linear-gradient(135deg, #0d6efd, #6610f2); color: white;">
-  <div>
-    <!-- Profile Photo -->
-    <img src="profile.jpg" alt="Kajal Ahire" 
+        style="height:100vh; background: url('images/bg-tech.jpg') center/cover no-repeat; color: white; position: relative;">
+
+  <!-- Overlay (for dark glassy effect) -->
+  <div style="position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.55);"></div>
+
+  <!-- Content -->
+  <div style="position:relative; z-index:1;">
+    <!-- Profile Photo (Bigger Circle) -->
+    <img src="images/profile.jpg" alt="Kajal Ahire" 
          class="rounded-circle mb-4"
-         style="width:180px; height:180px; object-fit:cover; border:5px solid white; box-shadow:0 5px 15px rgba(0,0,0,0.3);">
+         style="width:240px; height:240px; object-fit:cover; border:6px solid white; box-shadow:0 10px 25px rgba(0,0,0,0.5);">
 
     <!-- Name -->
-    <h1 style="font-size:3.5rem; font-weight:800;">🌟 Kajal Ahire</h1>
+    <h1 style="font-size:4rem; font-weight:800; text-shadow:0 4px 12px rgba(0,0,0,0.6);">🌟 Kajal Ahire</h1>
 
     <!-- Tagline with typing effect -->
-    <p class="lead mb-4" style="font-size:1.5rem;">
+    <p class="lead mb-4" style="font-size:1.7rem; text-shadow:0 2px 8px rgba(0,0,0,0.5);">
       <span id="typing"></span>
     </p>
 
     <!-- Social Icons -->
     <div class="mb-4">
-      <a href="https://github.com/yourgithub" target="_blank" class="text-white fs-3 mx-2"><i class="bi bi-github"></i></a>
-      <a href="https://linkedin.com/in/yourlinkedin" target="_blank" class="text-white fs-3 mx-2"><i class="bi bi-linkedin"></i></a>
-      <a href="mailto:yourmail@example.com" class="text-white fs-3 mx-2"><i class="bi bi-envelope-fill"></i></a>
+      <a href="https://github.com/Student-kajalahire" target="_blank" class="text-white fs-2 mx-2"><i class="bi bi-github"></i></a>
+      <a href="www.linkedin.com/in/kajal-ahire-a2a940300" target="_blank" class="text-white fs-2 mx-2"><i class="bi bi-linkedin"></i></a>
+      <a href="kajalahire121@gmail.com" class="text-white fs-2 mx-2"><i class="bi bi-envelope-fill"></i></a>
     </div>
 
     <!-- Button -->
-    <a href="#projects" class="btn btn-light btn-lg">View My Work</a>
+    <a href="#projects" class="btn btn-light btn-lg px-4">View My Work</a>
   </div>
 </header>
 
 <!-- Typed.js CDN -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
-<!
+<!-- Typing Effect Script -->
+<script>
+  var typed = new Typed("#typing", {
+    strings: [
+      "💻 Computer Technology",
+      "🌐 Web Development",
+      "🚀 Professional Activities"
+    ],
+    typeSpeed: 70,
+    backSpeed: 50,
+    backDelay: 1500,
+    loop: true
+  });
+</script>
+
 
 
   <!-- About Section -->
