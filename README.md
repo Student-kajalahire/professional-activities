@@ -1,6 +1,6 @@
-# 🌟 Professional Activities
+# 🌟Pro-File
 
-Welcome to my **Professional Activities Repository**!  
+Welcome to my **Pro-File Repository**!  
 This repository contains my projects, achievements, and activities during my diploma journey at **Government Polytechnic Nashik**.  
 
 ---
